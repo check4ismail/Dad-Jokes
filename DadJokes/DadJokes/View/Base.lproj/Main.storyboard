@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pyc-AQ-1a6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dad Jokes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" editable="NO" text="What did the shy pebble wish for? That she was a little boulder" translatesAutoresizingMaskIntoConstraints="NO" id="ISA-Gk-NEc">
+                                <rect key="frame" x="20" y="115" width="374" height="323"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ISA-Gk-NEc" secondAttribute="height" multiplier="22:19" id="yLG-FA-YfA"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="5vb-Bx-nC2"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laughing Dad" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-14-YT6">
+                                <rect key="frame" x="20" y="446" width="374" height="416"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gAX-14-YT6" secondAttribute="height" multiplier="187:208" id="Cuu-oi-fz4"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ISA-Gk-NEc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="9Cm-qU-Lp5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAX-14-YT6" secondAttribute="trailing" constant="20" id="Kfa-p6-Gcq"/>
+                            <constraint firstItem="gAX-14-YT6" firstAttribute="top" secondItem="ISA-Gk-NEc" secondAttribute="bottom" constant="8" id="SYM-VE-45J"/>
+                            <constraint firstItem="gAX-14-YT6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WiR-JT-gtc"/>
+                            <constraint firstItem="ISA-Gk-NEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="adj-lO-89C"/>
+                            <constraint firstItem="gAX-14-YT6" firstAttribute="top" secondItem="ISA-Gk-NEc" secondAttribute="bottom" constant="8" id="hat-8Y-R7L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ISA-Gk-NEc" secondAttribute="trailing" constant="20" id="qVL-qK-R3P"/>
+                            <constraint firstItem="gAX-14-YT6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ujq-qO-o0S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dad Jokes" largeTitleDisplayMode="always" id="9T8-x1-HEm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="9bf-fD-680">
+                            <connections>
+                                <action selector="forceRandomJoke:" destination="BYZ-38-t0r" id="2du-ux-HkF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dadJoke" destination="ISA-Gk-NEc" id="hT1-SX-oYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="127.23214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uoh-Vl-46V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pyc-AQ-1a6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0y4-FQ-Ut4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vzq-OL-jqm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSl-Qf-PgK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Laughing Dad" width="163" height="135"/>
+    </resources>
+</document>
