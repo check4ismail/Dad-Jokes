@@ -16,9 +16,12 @@ class ViewController: UIViewController {
 	private let headers: HTTPHeaders = [
 		"Accept": "application/json"
 	]
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		
+		/// If: it's connected to internet, update joke
+		/// Else: display default textview with no internet
 		if Connectivity.isConnectedToInternet {
 			generateRandomDadJoke()
 		} else {
@@ -26,6 +29,13 @@ class ViewController: UIViewController {
 		}
 	}
 	
+	//MARK: Change status bar to white
+	override func viewDidAppear(_ animated: Bool) {
+		navigationController?.navigationBar.barStyle = .black
+	}
+	
+	// MARK: Dad Jokes API
+	/// Calling Dad jokes API then changing textview in main thread
 	private func generateRandomDadJoke() {
 		Alamofire.request("https://icanhazdadjoke.com/",
 						  method: .get,
@@ -44,23 +54,25 @@ class ViewController: UIViewController {
 		}
 	}
 	
+	// MARK: Refresh button
 	@IBAction func forceRandomJoke(_ sender: Any) {
-		if Connectivity.isConnectedToInternet {
+		if Connectivity.isConnectedToInternet { // If: there's internet, update joke
 			generateRandomDadJoke()
-		} else {
+		} else {	// Else: display alert that there's no internet and update textview
 			alertNoInternet()
 			defaultNoInternetText()
 		}
 	}
 	
+	// MARK: Alert displayed if there's no internet connectivity
 	private func alertNoInternet() {
 		let alert = UIAlertController(title: "Error", message: "No internet detected 😢", preferredStyle: UIAlertController.Style.alert)
 		alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 		self.present(alert, animated: true, completion: nil)
 	}
 	
+	// MARK: Default textview if there's no internet connectivity
 	private func defaultNoInternetText() {
 		dadJoke.text = "When you're using your Dad Jokes app without an internet connection"
 	}
 }
-
