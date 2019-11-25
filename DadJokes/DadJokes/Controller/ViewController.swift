@@ -13,6 +13,7 @@ import Alamofire
 class ViewController: UIViewController {
 
 	@IBOutlet weak var dadJoke: UITextView!
+	private var dadJokeText: String = ""
 	private let headers: HTTPHeaders = [
 		"Accept": "application/json"
 	]
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
 					DispatchQueue.main.async {
 						if let joke = json["joke"].string {
 							self.dadJoke.text = joke
+							self.dadJokeText = joke
 						}
 					}
 				case .failure(let error):
@@ -64,6 +66,16 @@ class ViewController: UIViewController {
 		}
 	}
 	
+	//MARK: Share button
+	@IBAction func shareDadJoke(_ sender: Any) {
+		let textToShare: String = "\"\(dadJokeText)\""
+		
+		let activityVC = UIActivityViewController(activityItems: [textToShare], applicationActivities: nil)
+		activityVC.popoverPresentationController?.sourceView = (sender as! UIView)
+		self.present(activityVC, animated: true, completion: nil)
+	}
+	
+	
 	// MARK: Alert displayed if there's no internet connectivity
 	private func alertNoInternet() {
 		let alert = UIAlertController(title: "Error", message: "No internet detected 😢", preferredStyle: UIAlertController.Style.alert)
@@ -74,5 +86,6 @@ class ViewController: UIViewController {
 	// MARK: Default textview if there's no internet connectivity
 	private func defaultNoInternetText() {
 		dadJoke.text = "When you're using your Dad Jokes app without an internet connection"
+		dadJokeText = "When you're using your Dad Jokes app without an internet connection"
 	}
 }
