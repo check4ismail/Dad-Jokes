@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213169B8238D39F700C7A3C9 /* PMKAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 213169B7238D39F700C7A3C9 /* PMKAlamofire */; };
 		21AF5C1B2389DEDD001CAE1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF5C1A2389DEDD001CAE1A /* AppDelegate.swift */; };
 		21AF5C1D2389DEDD001CAE1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF5C1C2389DEDD001CAE1A /* SceneDelegate.swift */; };
 		21AF5C1F2389DEDD001CAE1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF5C1E2389DEDD001CAE1A /* ViewController.swift */; };
@@ -18,24 +19,11 @@
 		21DCDF26238B3BE000356906 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCDF25238B3BE000356906 /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		21AF5C2E2389DEDE001CAE1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21AF5C0F2389DEDD001CAE1A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21AF5C162389DEDD001CAE1A;
-			remoteInfo = DadJokes;
-		};
-		21AF5C392389DEDE001CAE1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21AF5C0F2389DEDD001CAE1A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21AF5C162389DEDD001CAE1A;
-			remoteInfo = DadJokes;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		213169C2238D41E400C7A3C9 /* DadJokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesTests.swift; sourceTree = "<group>"; };
+		213169C4238D41E400C7A3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213169D0238D41EE00C7A3C9 /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
+		213169D2238D41EE00C7A3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21AF5C172389DEDD001CAE1A /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AF5C1A2389DEDD001CAE1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21AF5C1C2389DEDD001CAE1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +31,6 @@
 		21AF5C212389DEDD001CAE1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21AF5C232389DEDE001CAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21AF5C282389DEDE001CAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21AF5C2D2389DEDE001CAE1A /* DadJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21AF5C382389DEDE001CAE1A /* DadJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DadJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AF5C532389E731001CAE1A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DCDF25238B3BE000356906 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,30 +42,37 @@
 			files = (
 				21AF5C4F2389DFEB001CAE1A /* SwiftyJSON in Frameworks */,
 				21AF5C522389E000001CAE1A /* Alamofire in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21AF5C2A2389DEDE001CAE1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21AF5C352389DEDE001CAE1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				213169B8238D39F700C7A3C9 /* PMKAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213169C1238D41E400C7A3C9 /* DadJokesTests */ = {
+			isa = PBXGroup;
+			children = (
+				213169C2238D41E400C7A3C9 /* DadJokesTests.swift */,
+				213169C4238D41E400C7A3C9 /* Info.plist */,
+			);
+			path = DadJokesTests;
+			sourceTree = "<group>";
+		};
+		213169CF238D41EE00C7A3C9 /* DadJokesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				213169D0238D41EE00C7A3C9 /* DadJokesUITests.swift */,
+				213169D2238D41EE00C7A3C9 /* Info.plist */,
+			);
+			path = DadJokesUITests;
+			sourceTree = "<group>";
+		};
 		21AF5C0E2389DEDD001CAE1A = {
 			isa = PBXGroup;
 			children = (
 				21AF5C192389DEDD001CAE1A /* DadJokes */,
+				213169C1238D41E400C7A3C9 /* DadJokesTests */,
+				213169CF238D41EE00C7A3C9 /* DadJokesUITests */,
 				21AF5C182389DEDD001CAE1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				21AF5C172389DEDD001CAE1A /* DadJokes.app */,
-				21AF5C2D2389DEDE001CAE1A /* DadJokesTests.xctest */,
-				21AF5C382389DEDE001CAE1A /* DadJokesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,46 +151,11 @@
 			packageProductDependencies = (
 				21AF5C4E2389DFEB001CAE1A /* SwiftyJSON */,
 				21AF5C512389E000001CAE1A /* Alamofire */,
+				213169B7238D39F700C7A3C9 /* PMKAlamofire */,
 			);
 			productName = DadJokes;
 			productReference = 21AF5C172389DEDD001CAE1A /* DadJokes.app */;
 			productType = "com.apple.product-type.application";
-		};
-		21AF5C2C2389DEDE001CAE1A /* DadJokesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21AF5C442389DEDE001CAE1A /* Build configuration list for PBXNativeTarget "DadJokesTests" */;
-			buildPhases = (
-				21AF5C292389DEDE001CAE1A /* Sources */,
-				21AF5C2A2389DEDE001CAE1A /* Frameworks */,
-				21AF5C2B2389DEDE001CAE1A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21AF5C2F2389DEDE001CAE1A /* PBXTargetDependency */,
-			);
-			name = DadJokesTests;
-			productName = DadJokesTests;
-			productReference = 21AF5C2D2389DEDE001CAE1A /* DadJokesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		21AF5C372389DEDE001CAE1A /* DadJokesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21AF5C472389DEDE001CAE1A /* Build configuration list for PBXNativeTarget "DadJokesUITests" */;
-			buildPhases = (
-				21AF5C342389DEDE001CAE1A /* Sources */,
-				21AF5C352389DEDE001CAE1A /* Frameworks */,
-				21AF5C362389DEDE001CAE1A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21AF5C3A2389DEDE001CAE1A /* PBXTargetDependency */,
-			);
-			name = DadJokesUITests;
-			productName = DadJokesUITests;
-			productReference = 21AF5C382389DEDE001CAE1A /* DadJokesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,14 +169,6 @@
 				TargetAttributes = {
 					21AF5C162389DEDD001CAE1A = {
 						CreatedOnToolsVersion = 11.2.1;
-					};
-					21AF5C2C2389DEDE001CAE1A = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 21AF5C162389DEDD001CAE1A;
-					};
-					21AF5C372389DEDE001CAE1A = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 21AF5C162389DEDD001CAE1A;
 					};
 				};
 			};
@@ -236,14 +184,13 @@
 			packageReferences = (
 				21AF5C4D2389DFEB001CAE1A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				21AF5C502389E000001CAE1A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				213169B6238D39F700C7A3C9 /* XCRemoteSwiftPackageReference "PMKAlamofire" */,
 			);
 			productRefGroup = 21AF5C182389DEDD001CAE1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				21AF5C162389DEDD001CAE1A /* DadJokes */,
-				21AF5C2C2389DEDE001CAE1A /* DadJokesTests */,
-				21AF5C372389DEDE001CAE1A /* DadJokesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,20 +203,6 @@
 				21AF5C542389E731001CAE1A /* LaunchScreen.storyboard in Resources */,
 				21AF5C242389DEDE001CAE1A /* Assets.xcassets in Resources */,
 				21AF5C222389DEDD001CAE1A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21AF5C2B2389DEDE001CAE1A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21AF5C362389DEDE001CAE1A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,34 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21AF5C292389DEDE001CAE1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21AF5C342389DEDE001CAE1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		21AF5C2F2389DEDE001CAE1A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21AF5C162389DEDD001CAE1A /* DadJokes */;
-			targetProxy = 21AF5C2E2389DEDE001CAE1A /* PBXContainerItemProxy */;
-		};
-		21AF5C3A2389DEDE001CAE1A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21AF5C162389DEDD001CAE1A /* DadJokes */;
-			targetProxy = 21AF5C392389DEDE001CAE1A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		21AF5C202389DEDD001CAE1A /* Main.storyboard */ = {
@@ -478,90 +384,6 @@
 			};
 			name = Release;
 		};
-		21AF5C452389DEDE001CAE1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V77JTY6356;
-				INFOPLIST_FILE = DadJokesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJokesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
-			};
-			name = Debug;
-		};
-		21AF5C462389DEDE001CAE1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V77JTY6356;
-				INFOPLIST_FILE = DadJokesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJokesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DadJokes.app/DadJokes";
-			};
-			name = Release;
-		};
-		21AF5C482389DEDE001CAE1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V77JTY6356;
-				INFOPLIST_FILE = DadJokesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJokesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DadJokes;
-			};
-			name = Debug;
-		};
-		21AF5C492389DEDE001CAE1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V77JTY6356;
-				INFOPLIST_FILE = DadJokesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJokesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DadJokes;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,27 +405,17 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21AF5C442389DEDE001CAE1A /* Build configuration list for PBXNativeTarget "DadJokesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21AF5C452389DEDE001CAE1A /* Debug */,
-				21AF5C462389DEDE001CAE1A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21AF5C472389DEDE001CAE1A /* Build configuration list for PBXNativeTarget "DadJokesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21AF5C482389DEDE001CAE1A /* Debug */,
-				21AF5C492389DEDE001CAE1A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		213169B6238D39F700C7A3C9 /* XCRemoteSwiftPackageReference "PMKAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PromiseKit/PMKAlamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.4;
+			};
+		};
 		21AF5C4D2389DFEB001CAE1A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
@@ -623,6 +435,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		213169B7238D39F700C7A3C9 /* PMKAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 213169B6238D39F700C7A3C9 /* XCRemoteSwiftPackageReference "PMKAlamofire" */;
+			productName = PMKAlamofire;
+		};
 		21AF5C4E2389DFEB001CAE1A /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 21AF5C4D2389DFEB001CAE1A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
