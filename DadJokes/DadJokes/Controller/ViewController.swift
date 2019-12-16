@@ -37,6 +37,16 @@ class ViewController: UIViewController {
 		navigationController?.navigationBar.barStyle = .black
 	}
 	
+	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		/// If: it's connected to internet, update joke
+		/// Else: display default textview with no internet
+		if Connectivity.isConnectedToInternet {
+			generateRandomDadJoke()
+		} else {
+			defaultNoInternetText()
+		}
+	}
+	
 	// MARK: Dad Jokes API
 	/// Calling Dad jokes API then changing textview in main thread
 	func generateRandomDadJoke() {

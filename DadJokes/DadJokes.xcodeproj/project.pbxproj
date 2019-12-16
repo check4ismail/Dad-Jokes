@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2103F49B23A7A024003B5F6D /* DadJokes.png in Resources */ = {isa = PBXBuildFile; fileRef = 2103F49A23A7A024003B5F6D /* DadJokes.png */; };
 		213169B8238D39F700C7A3C9 /* PMKAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 213169B7238D39F700C7A3C9 /* PMKAlamofire */; };
 		21AF5C1B2389DEDD001CAE1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF5C1A2389DEDD001CAE1A /* AppDelegate.swift */; };
 		21AF5C1D2389DEDD001CAE1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF5C1C2389DEDD001CAE1A /* SceneDelegate.swift */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2103F49423A796AC003B5F6D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2103F49A23A7A024003B5F6D /* DadJokes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DadJokes.png; sourceTree = "<group>"; };
 		213169C2238D41E400C7A3C9 /* DadJokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesTests.swift; sourceTree = "<group>"; };
 		213169C4238D41E400C7A3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		213169D0238D41EE00C7A3C9 /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				21AF5C4C2389DF4F001CAE1A /* Controller */,
 				21AF5C552389EC70001CAE1A /* Supporting Files */,
 				21AF5C282389DEDE001CAE1A /* Info.plist */,
+				2103F49423A796AC003B5F6D /* README.md */,
+				2103F49A23A7A024003B5F6D /* DadJokes.png */,
 			);
 			path = DadJokes;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2103F49B23A7A024003B5F6D /* DadJokes.png in Resources */,
 				21AF5C542389E731001CAE1A /* LaunchScreen.storyboard in Resources */,
 				21AF5C242389DEDE001CAE1A /* Assets.xcassets in Resources */,
 				21AF5C222389DEDD001CAE1A /* Main.storyboard in Resources */,
@@ -355,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V77JTY6356;
 				INFOPLIST_FILE = DadJokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V77JTY6356;
 				INFOPLIST_FILE = DadJokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
