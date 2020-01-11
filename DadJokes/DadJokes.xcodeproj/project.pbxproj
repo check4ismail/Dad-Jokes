@@ -17,6 +17,7 @@
 		21AF5C4F2389DFEB001CAE1A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 21AF5C4E2389DFEB001CAE1A /* SwiftyJSON */; };
 		21AF5C522389E000001CAE1A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 21AF5C512389E000001CAE1A /* Alamofire */; };
 		21AF5C542389E731001CAE1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AF5C532389E731001CAE1A /* LaunchScreen.storyboard */; };
+		21C371AA23CA7622008D3D5F /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C371A923CA7622008D3D5F /* SplashController.swift */; };
 		21DCDF26238B3BE000356906 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCDF25238B3BE000356906 /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		21AF5C232389DEDE001CAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21AF5C282389DEDE001CAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21AF5C532389E731001CAE1A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21C371A923CA7622008D3D5F /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		21DCDF25238B3BE000356906 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 		21AF5C4C2389DF4F001CAE1A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				21C371A923CA7622008D3D5F /* SplashController.swift */,
 				21AF5C1E2389DEDD001CAE1A /* ViewController.swift */,
 			);
 			path = Controller;
@@ -223,6 +226,7 @@
 				21AF5C1B2389DEDD001CAE1A /* AppDelegate.swift in Sources */,
 				21DCDF26238B3BE000356906 /* Connectivity.swift in Sources */,
 				21AF5C1D2389DEDD001CAE1A /* SceneDelegate.swift in Sources */,
+				21C371AA23CA7622008D3D5F /* SplashController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

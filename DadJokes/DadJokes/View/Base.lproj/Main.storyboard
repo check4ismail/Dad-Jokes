@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pyc-AQ-1a6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aNj-bM-ZQu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -69,11 +69,41 @@
             </objects>
             <point key="canvasLocation" x="1037.68115942029" y="127.23214285714285"/>
         </scene>
+        <!--Splash Controller-->
+        <scene sceneID="oJT-cS-WmZ">
+            <objects>
+                <viewController id="aNj-bM-ZQu" customClass="SplashController" customModule="DadJokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IW8-ea-Cn0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Habib" translatesAutoresizingMaskIntoConstraints="NO" id="cZs-pI-jxF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cZs-pI-jxF" secondAttribute="bottom" id="FPY-mY-9vz"/>
+                            <constraint firstAttribute="trailing" secondItem="cZs-pI-jxF" secondAttribute="trailing" id="PoK-MV-BIy"/>
+                            <constraint firstItem="cZs-pI-jxF" firstAttribute="leading" secondItem="IW8-ea-Cn0" secondAttribute="leading" id="eLx-9r-vbv"/>
+                            <constraint firstItem="cZs-pI-jxF" firstAttribute="top" secondItem="IW8-ea-Cn0" secondAttribute="top" id="vjV-ao-G1V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9d5-Yn-PlU"/>
+                    </view>
+                    <connections>
+                        <segue destination="pyc-AQ-1a6" kind="presentation" identifier="showDadJokes" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="sGh-vK-Ogp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44d-K8-851" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742.02898550724649" y="129.91071428571428"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="uoh-Vl-46V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pyc-AQ-1a6" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="QGo-c3-Bgi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="0y4-FQ-Ut4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -96,6 +126,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Habib" width="1008" height="1344"/>
         <image name="Laughing Dad" width="163" height="135"/>
     </resources>
 </document>
