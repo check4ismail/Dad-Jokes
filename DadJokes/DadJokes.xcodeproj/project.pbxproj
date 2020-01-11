@@ -28,7 +28,7 @@
 		213169C4238D41E400C7A3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		213169D0238D41EE00C7A3C9 /* DadJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesUITests.swift; sourceTree = "<group>"; };
 		213169D2238D41EE00C7A3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21AF5C172389DEDD001CAE1A /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AF5C172389DEDD001CAE1A /* DadJoking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJoking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AF5C1A2389DEDD001CAE1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21AF5C1C2389DEDD001CAE1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		21AF5C1E2389DEDD001CAE1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		21AF5C182389DEDD001CAE1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21AF5C172389DEDD001CAE1A /* DadJokes.app */,
+				21AF5C172389DEDD001CAE1A /* DadJoking.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				213169B7238D39F700C7A3C9 /* PMKAlamofire */,
 			);
 			productName = DadJokes;
-			productReference = 21AF5C172389DEDD001CAE1A /* DadJokes.app */;
+			productReference = 21AF5C172389DEDD001CAE1A /* DadJoking.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -370,8 +370,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJokes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJoking;
+				PRODUCT_NAME = DadJoking;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -389,8 +389,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJokes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IsmailElmaliki.DadJoking;
+				PRODUCT_NAME = DadJoking;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
