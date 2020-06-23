@@ -23,12 +23,17 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		triggerDadJoke()
+	}
+	
+	func triggerDadJoke() {
 		/// If: it's connected to internet, update joke
 		/// Else: display default textview with no internet
 		if Connectivity.isConnectedToInternet {
 			generateRandomDadJoke()
 		} else {
 			defaultNoInternetText()
+			alertNoInternet()
 		}
 	}
 	
@@ -38,13 +43,7 @@ class ViewController: UIViewController {
 	}
 	
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-		/// If: it's connected to internet, update joke
-		/// Else: display default textview with no internet
-		if Connectivity.isConnectedToInternet {
-			generateRandomDadJoke()
-		} else {
-			defaultNoInternetText()
-		}
+		triggerDadJoke()
 	}
 	
 	// MARK: Dad Jokes API
@@ -70,12 +69,7 @@ class ViewController: UIViewController {
 	
 	// MARK: Refresh button
 	@IBAction func forceRandomJoke(_ sender: Any) {
-		if Connectivity.isConnectedToInternet { // If: there's internet, update joke
-			generateRandomDadJoke()
-		} else {	// Else: display alert that there's no internet and update textview
-			alertNoInternet()
-			defaultNoInternetText()
-		}
+		triggerDadJoke()
 	}
 	
 	//MARK: Share button
